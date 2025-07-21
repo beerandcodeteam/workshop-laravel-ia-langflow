@@ -8,7 +8,8 @@ services:
       - langflow-data:/app/langflow
     env_file:
       - .env
-
+    networks:
+      - saas-ia-filament_sail
   vectorstore:
     image: pgvector/pgvector:pg16
     environment:
@@ -19,6 +20,8 @@ services:
       - "5432:5432"
     volumes:
       - pgvector-data:/var/lib/postgresql/data
+    networks:
+      - saas-ia-filament_sail
 
   redis:
     image: redis:latest
@@ -26,6 +29,13 @@ services:
       - "6379:6379"
     volumes:
       - redis-data:/data
+    networks:
+      - saas-ia-filament_sail
+
+networks:
+  saas-ia-filament_sail:
+    external: true
+
 
 volumes:
   langflow-data:
