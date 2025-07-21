@@ -1,5 +1,5 @@
 services:
-  langflow:
+  app:
     image: langflowai/langflow:latest
     restart: always
     ports:
@@ -18,7 +18,7 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - langflow-postgres-vectorstore:/var/lib/postgresql/data
+      - pgvector-data:/var/lib/postgresql/data
 
   redis:
     image: redis:latest
@@ -30,4 +30,4 @@ services:
 volumes:
   langflow-data:
   redis-data:
-  langflow-postgres-vectorstore:
+  pgvector-data:
