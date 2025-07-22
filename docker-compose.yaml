@@ -6,6 +6,7 @@ services:
       - "7860:7860"
     volumes:
       - langflow-data:/app/langflow
+      - ./config:/app/config
     env_file:
       - .env
     networks:

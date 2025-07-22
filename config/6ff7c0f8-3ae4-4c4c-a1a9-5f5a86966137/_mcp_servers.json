@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "mcp_laravel_tools": {
+      "command": "uvx",
+      "args": [
+        "mcp-proxy",
+        "http://saas-ia-filament-mcp-1:8090/mcp/sse"
+      ]
+    },
+    "lf_mcp_server": {
+      "command": "uvx",
+      "args": [
+        "mcp-proxy",
+        "http://localhost:7860/api/v1/mcp/project/1e73e781-64fb-4dab-852b-1c1ed999bf0d/sse"
+      ]
+    }
+  }
+}
