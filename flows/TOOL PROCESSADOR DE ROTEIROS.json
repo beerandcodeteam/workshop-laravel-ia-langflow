@@ -6,34 +6,6 @@
         "className": "",
         "data": {
           "sourceHandle": {
-            "dataType": "File",
-            "id": "File-wuLMh",
-            "name": "message",
-            "output_types": [
-              "Message"
-            ]
-          },
-          "targetHandle": {
-            "fieldName": "script",
-            "id": "Prompt Template-tvrDL",
-            "inputTypes": [
-              "Message"
-            ],
-            "type": "str"
-          }
-        },
-        "id": "xy-edge__File-wuLMh{œdataTypeœ:œFileœ,œidœ:œFile-wuLMhœ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}-Prompt Template-tvrDL{œfieldNameœ:œscriptœ,œidœ:œPrompt Template-tvrDLœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
-        "selected": false,
-        "source": "File-wuLMh",
-        "sourceHandle": "{œdataTypeœ:œFileœ,œidœ:œFile-wuLMhœ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}",
-        "target": "Prompt Template-tvrDL",
-        "targetHandle": "{œfieldNameœ:œscriptœ,œidœ:œPrompt Template-tvrDLœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
-      },
-      {
-        "animated": false,
-        "className": "",
-        "data": {
-          "sourceHandle": {
             "dataType": "Prompt Template",
             "id": "Prompt Template-tvrDL",
             "name": "prompt",
@@ -84,6 +56,206 @@
         "sourceHandle": "{œdataTypeœ:œMCPToolsœ,œidœ:œMCPTools-5P7Kuœ,œnameœ:œcomponent_as_toolœ,œoutput_typesœ:[œToolœ]}",
         "target": "Agent-uKn0T",
         "targetHandle": "{œfieldNameœ:œtoolsœ,œidœ:œAgent-uKn0Tœ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "File",
+            "id": "File-wuLMh",
+            "name": "message",
+            "output_types": [
+              "Message"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "data_inputs",
+            "id": "SplitText-fn7BK",
+            "inputTypes": [
+              "Data",
+              "DataFrame",
+              "Message"
+            ],
+            "type": "other"
+          }
+        },
+        "id": "xy-edge__File-wuLMh{œdataTypeœ:œFileœ,œidœ:œFile-wuLMhœ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}-SplitText-fn7BK{œfieldNameœ:œdata_inputsœ,œidœ:œSplitText-fn7BKœ,œinputTypesœ:[œDataœ,œDataFrameœ,œMessageœ],œtypeœ:œotherœ}",
+        "selected": false,
+        "source": "File-wuLMh",
+        "sourceHandle": "{œdataTypeœ:œFileœ,œidœ:œFile-wuLMhœ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "SplitText-fn7BK",
+        "targetHandle": "{œfieldNameœ:œdata_inputsœ,œidœ:œSplitText-fn7BKœ,œinputTypesœ:[œDataœ,œDataFrameœ,œMessageœ],œtypeœ:œotherœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "SplitText",
+            "id": "SplitText-fn7BK",
+            "name": "dataframe",
+            "output_types": [
+              "DataFrame"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "df",
+            "id": "DataFrameOperations-SoBdj",
+            "inputTypes": [
+              "DataFrame"
+            ],
+            "type": "other"
+          }
+        },
+        "id": "xy-edge__SplitText-fn7BK{œdataTypeœ:œSplitTextœ,œidœ:œSplitText-fn7BKœ,œnameœ:œdataframeœ,œoutput_typesœ:[œDataFrameœ]}-DataFrameOperations-SoBdj{œfieldNameœ:œdfœ,œidœ:œDataFrameOperations-SoBdjœ,œinputTypesœ:[œDataFrameœ],œtypeœ:œotherœ}",
+        "selected": false,
+        "source": "SplitText-fn7BK",
+        "sourceHandle": "{œdataTypeœ:œSplitTextœ,œidœ:œSplitText-fn7BKœ,œnameœ:œdataframeœ,œoutput_typesœ:[œDataFrameœ]}",
+        "target": "DataFrameOperations-SoBdj",
+        "targetHandle": "{œfieldNameœ:œdfœ,œidœ:œDataFrameOperations-SoBdjœ,œinputTypesœ:[œDataFrameœ],œtypeœ:œotherœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "SplitText",
+            "id": "SplitText-fn7BK",
+            "name": "dataframe",
+            "output_types": [
+              "DataFrame"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "df",
+            "id": "DataFrameOperations-F7B3p",
+            "inputTypes": [
+              "DataFrame"
+            ],
+            "type": "other"
+          }
+        },
+        "id": "xy-edge__SplitText-fn7BK{œdataTypeœ:œSplitTextœ,œidœ:œSplitText-fn7BKœ,œnameœ:œdataframeœ,œoutput_typesœ:[œDataFrameœ]}-DataFrameOperations-F7B3p{œfieldNameœ:œdfœ,œidœ:œDataFrameOperations-F7B3pœ,œinputTypesœ:[œDataFrameœ],œtypeœ:œotherœ}",
+        "selected": false,
+        "source": "SplitText-fn7BK",
+        "sourceHandle": "{œdataTypeœ:œSplitTextœ,œidœ:œSplitText-fn7BKœ,œnameœ:œdataframeœ,œoutput_typesœ:[œDataFrameœ]}",
+        "target": "DataFrameOperations-F7B3p",
+        "targetHandle": "{œfieldNameœ:œdfœ,œidœ:œDataFrameOperations-F7B3pœ,œinputTypesœ:[œDataFrameœ],œtypeœ:œotherœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "DataFrameOperations",
+            "id": "DataFrameOperations-SoBdj",
+            "name": "output",
+            "output_types": [
+              "DataFrame"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "input_data",
+            "id": "ParserComponent-M3zMJ",
+            "inputTypes": [
+              "DataFrame",
+              "Data"
+            ],
+            "type": "other"
+          }
+        },
+        "id": "xy-edge__DataFrameOperations-SoBdj{œdataTypeœ:œDataFrameOperationsœ,œidœ:œDataFrameOperations-SoBdjœ,œnameœ:œoutputœ,œoutput_typesœ:[œDataFrameœ]}-ParserComponent-M3zMJ{œfieldNameœ:œinput_dataœ,œidœ:œParserComponent-M3zMJœ,œinputTypesœ:[œDataFrameœ,œDataœ],œtypeœ:œotherœ}",
+        "selected": false,
+        "source": "DataFrameOperations-SoBdj",
+        "sourceHandle": "{œdataTypeœ:œDataFrameOperationsœ,œidœ:œDataFrameOperations-SoBdjœ,œnameœ:œoutputœ,œoutput_typesœ:[œDataFrameœ]}",
+        "target": "ParserComponent-M3zMJ",
+        "targetHandle": "{œfieldNameœ:œinput_dataœ,œidœ:œParserComponent-M3zMJœ,œinputTypesœ:[œDataFrameœ,œDataœ],œtypeœ:œotherœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "DataFrameOperations",
+            "id": "DataFrameOperations-F7B3p",
+            "name": "output",
+            "output_types": [
+              "DataFrame"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "input_data",
+            "id": "ParserComponent-xV33K",
+            "inputTypes": [
+              "DataFrame",
+              "Data"
+            ],
+            "type": "other"
+          }
+        },
+        "id": "xy-edge__DataFrameOperations-F7B3p{œdataTypeœ:œDataFrameOperationsœ,œidœ:œDataFrameOperations-F7B3pœ,œnameœ:œoutputœ,œoutput_typesœ:[œDataFrameœ]}-ParserComponent-xV33K{œfieldNameœ:œinput_dataœ,œidœ:œParserComponent-xV33Kœ,œinputTypesœ:[œDataFrameœ,œDataœ],œtypeœ:œotherœ}",
+        "selected": false,
+        "source": "DataFrameOperations-F7B3p",
+        "sourceHandle": "{œdataTypeœ:œDataFrameOperationsœ,œidœ:œDataFrameOperations-F7B3pœ,œnameœ:œoutputœ,œoutput_typesœ:[œDataFrameœ]}",
+        "target": "ParserComponent-xV33K",
+        "targetHandle": "{œfieldNameœ:œinput_dataœ,œidœ:œParserComponent-xV33Kœ,œinputTypesœ:[œDataFrameœ,œDataœ],œtypeœ:œotherœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "ParserComponent",
+            "id": "ParserComponent-M3zMJ",
+            "name": "parsed_text",
+            "output_types": [
+              "Message"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "script",
+            "id": "Prompt Template-tvrDL",
+            "inputTypes": [
+              "Message"
+            ],
+            "type": "str"
+          }
+        },
+        "id": "xy-edge__ParserComponent-M3zMJ{œdataTypeœ:œParserComponentœ,œidœ:œParserComponent-M3zMJœ,œnameœ:œparsed_textœ,œoutput_typesœ:[œMessageœ]}-Prompt Template-tvrDL{œfieldNameœ:œscriptœ,œidœ:œPrompt Template-tvrDLœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "selected": false,
+        "source": "ParserComponent-M3zMJ",
+        "sourceHandle": "{œdataTypeœ:œParserComponentœ,œidœ:œParserComponent-M3zMJœ,œnameœ:œparsed_textœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "Prompt Template-tvrDL",
+        "targetHandle": "{œfieldNameœ:œscriptœ,œidœ:œPrompt Template-tvrDLœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "ParserComponent",
+            "id": "ParserComponent-xV33K",
+            "name": "parsed_text",
+            "output_types": [
+              "Message"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "script_2",
+            "id": "Prompt Template-tvrDL",
+            "inputTypes": [
+              "Message"
+            ],
+            "type": "str"
+          }
+        },
+        "id": "xy-edge__ParserComponent-xV33K{œdataTypeœ:œParserComponentœ,œidœ:œParserComponent-xV33Kœ,œnameœ:œparsed_textœ,œoutput_typesœ:[œMessageœ]}-Prompt Template-tvrDL{œfieldNameœ:œscript_2œ,œidœ:œPrompt Template-tvrDLœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "selected": false,
+        "source": "ParserComponent-xV33K",
+        "sourceHandle": "{œdataTypeœ:œParserComponentœ,œidœ:œParserComponent-xV33Kœ,œnameœ:œparsed_textœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "Prompt Template-tvrDL",
+        "targetHandle": "{œfieldNameœ:œscript_2œ,œidœ:œPrompt Template-tvrDLœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
       }
     ],
     "nodes": [
@@ -116,7 +288,7 @@
             "frozen": false,
             "icon": "file-text",
             "key": "File",
-            "last_updated": "2025-07-22T20:38:05.502Z",
+            "last_updated": "2025-07-23T14:24:42.981Z",
             "legacy": false,
             "metadata": {},
             "minimized": false,
@@ -367,8 +539,8 @@
           "width": 320
         },
         "position": {
-          "x": 297.1784095248369,
-          "y": 492.3159305646946
+          "x": -583.8859782782204,
+          "y": 407.72257157128934
         },
         "selected": false,
         "type": "genericNode"
@@ -385,7 +557,8 @@
             "custom_fields": {
               "template": [
                 "script_id",
-                "script"
+                "script",
+                "script_2"
               ]
             },
             "description": "Create a prompt template with dynamic variables.",
@@ -471,6 +644,28 @@
                 "type": "str",
                 "value": ""
               },
+              "script_2": {
+                "advanced": false,
+                "display_name": "script_2",
+                "dynamic": false,
+                "field_type": "str",
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "script_2",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "type": "str",
+                "value": ""
+              },
               "script_id": {
                 "advanced": false,
                 "display_name": "script_id",
@@ -509,7 +704,7 @@
                 "tool_mode": false,
                 "trace_as_input": true,
                 "type": "prompt",
-                "value": "ID DO ROTEIRO NO SISTEMA: {script_id}\n\n-----------\nROTEIRO COMPLETO\n\n{script}"
+                "value": "ID DO ROTEIRO NO SISTEMA: {script_id}\n\n-----------\nROTEIRO COMPLETO\n\n{script}\n\n{script_2}"
               },
               "tool_placeholder": {
                 "_input_type": "MessageTextInput",
@@ -543,12 +738,12 @@
         "dragging": false,
         "id": "Prompt Template-tvrDL",
         "measured": {
-          "height": 447,
+          "height": 529,
           "width": 320
         },
         "position": {
-          "x": 805.9739670999406,
-          "y": 388.687747705086
+          "x": 1175.2461823405367,
+          "y": 297.5510116363074
         },
         "selected": false,
         "type": "genericNode"
@@ -593,7 +788,7 @@
             "frozen": false,
             "icon": "bot",
             "key": "Agent",
-            "last_updated": "2025-07-22T20:38:05.503Z",
+            "last_updated": "2025-07-23T14:24:42.982Z",
             "legacy": false,
             "metadata": {},
             "minimized": false,
@@ -920,7 +1115,7 @@
                 "tool_mode": false,
                 "trace_as_metadata": true,
                 "type": "str",
-                "value": "gpt-4o-mini"
+                "value": "gpt-4o"
               },
               "n_messages": {
                 "_input_type": "IntInput",
@@ -1099,8 +1294,8 @@
           "width": 320
         },
         "position": {
-          "x": 1273.0739929130048,
-          "y": 346.35328328569096
+          "x": 1583.4376832597948,
+          "y": 323.85054094467915
         },
         "selected": false,
         "type": "genericNode"
@@ -1128,7 +1323,7 @@
             "frozen": false,
             "icon": "Mcp",
             "key": "MCPTools",
-            "last_updated": "2025-07-22T20:38:05.504Z",
+            "last_updated": "2025-07-23T14:24:42.983Z",
             "legacy": false,
             "lf_version": "1.5.0.post1",
             "metadata": {},
@@ -1452,17 +1647,1384 @@
           "width": 320
         },
         "position": {
-          "x": 808.6839525019275,
-          "y": 903.3145507491545
+          "x": 1054.2187075052675,
+          "y": 989.0568461471462
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "DataFrameOperations-SoBdj",
+          "node": {
+            "base_classes": [
+              "DataFrame"
+            ],
+            "beta": false,
+            "category": "processing",
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Perform various operations on a DataFrame.",
+            "display_name": "DataFrame Operations",
+            "documentation": "https://docs.langflow.org/components-processing#dataframe-operations",
+            "edited": false,
+            "field_order": [
+              "df",
+              "operation",
+              "column_name",
+              "filter_value",
+              "filter_operator",
+              "ascending",
+              "new_column_name",
+              "new_column_value",
+              "columns_to_select",
+              "num_rows",
+              "replace_value",
+              "replacement_value"
+            ],
+            "frozen": false,
+            "icon": "table",
+            "key": "DataFrameOperations",
+            "last_updated": "2025-07-23T14:24:43.046Z",
+            "legacy": false,
+            "metadata": {},
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "DataFrame",
+                "group_outputs": false,
+                "method": "perform_operation",
+                "name": "output",
+                "options": null,
+                "required_inputs": null,
+                "selected": "DataFrame",
+                "tool_mode": true,
+                "types": [
+                  "DataFrame"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "score": 0.007568328950209746,
+            "template": {
+              "_type": "Component",
+              "ascending": {
+                "_input_type": "BoolInput",
+                "advanced": false,
+                "display_name": "Sort Ascending",
+                "dynamic": true,
+                "info": "Whether to sort in ascending order.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "ascending",
+                "placeholder": "",
+                "required": false,
+                "show": false,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": true
+              },
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "import pandas as pd\n\nfrom langflow.custom.custom_component.component import Component\nfrom langflow.inputs import SortableListInput\nfrom langflow.io import (\n    BoolInput,\n    DataFrameInput,\n    DropdownInput,\n    IntInput,\n    MessageTextInput,\n    Output,\n    StrInput,\n)\nfrom langflow.logging import logger\nfrom langflow.schema.dataframe import DataFrame\n\n\nclass DataFrameOperationsComponent(Component):\n    display_name = \"DataFrame Operations\"\n    description = \"Perform various operations on a DataFrame.\"\n    documentation: str = \"https://docs.langflow.org/components-processing#dataframe-operations\"\n    icon = \"table\"\n    name = \"DataFrameOperations\"\n\n    OPERATION_CHOICES = [\n        \"Add Column\",\n        \"Drop Column\",\n        \"Filter\",\n        \"Head\",\n        \"Rename Column\",\n        \"Replace Value\",\n        \"Select Columns\",\n        \"Sort\",\n        \"Tail\",\n        \"Drop Duplicates\",\n    ]\n\n    inputs = [\n        DataFrameInput(\n            name=\"df\",\n            display_name=\"DataFrame\",\n            info=\"The input DataFrame to operate on.\",\n            required=True,\n        ),\n        SortableListInput(\n            name=\"operation\",\n            display_name=\"Operation\",\n            placeholder=\"Select Operation\",\n            info=\"Select the DataFrame operation to perform.\",\n            options=[\n                {\"name\": \"Add Column\", \"icon\": \"plus\"},\n                {\"name\": \"Drop Column\", \"icon\": \"minus\"},\n                {\"name\": \"Filter\", \"icon\": \"filter\"},\n                {\"name\": \"Head\", \"icon\": \"arrow-up\"},\n                {\"name\": \"Rename Column\", \"icon\": \"pencil\"},\n                {\"name\": \"Replace Value\", \"icon\": \"replace\"},\n                {\"name\": \"Select Columns\", \"icon\": \"columns\"},\n                {\"name\": \"Sort\", \"icon\": \"arrow-up-down\"},\n                {\"name\": \"Tail\", \"icon\": \"arrow-down\"},\n                {\"name\": \"Drop Duplicates\", \"icon\": \"copy-x\"},\n            ],\n            real_time_refresh=True,\n            limit=1,\n        ),\n        StrInput(\n            name=\"column_name\",\n            display_name=\"Column Name\",\n            info=\"The column name to use for the operation.\",\n            dynamic=True,\n            show=False,\n        ),\n        MessageTextInput(\n            name=\"filter_value\",\n            display_name=\"Filter Value\",\n            info=\"The value to filter rows by.\",\n            dynamic=True,\n            show=False,\n        ),\n        DropdownInput(\n            name=\"filter_operator\",\n            display_name=\"Filter Operator\",\n            options=[\"equals\", \"not equals\", \"contains\", \"starts with\", \"ends with\", \"greater than\", \"less than\"],\n            value=\"equals\",\n            info=\"The operator to apply for filtering rows.\",\n            advanced=False,\n            dynamic=True,\n            show=False,\n        ),\n        BoolInput(\n            name=\"ascending\",\n            display_name=\"Sort Ascending\",\n            info=\"Whether to sort in ascending order.\",\n            dynamic=True,\n            show=False,\n            value=True,\n        ),\n        StrInput(\n            name=\"new_column_name\",\n            display_name=\"New Column Name\",\n            info=\"The new column name when renaming or adding a column.\",\n            dynamic=True,\n            show=False,\n        ),\n        MessageTextInput(\n            name=\"new_column_value\",\n            display_name=\"New Column Value\",\n            info=\"The value to populate the new column with.\",\n            dynamic=True,\n            show=False,\n        ),\n        StrInput(\n            name=\"columns_to_select\",\n            display_name=\"Columns to Select\",\n            dynamic=True,\n            is_list=True,\n            show=False,\n        ),\n        IntInput(\n            name=\"num_rows\",\n            display_name=\"Number of Rows\",\n            info=\"Number of rows to return (for head/tail).\",\n            dynamic=True,\n            show=False,\n            value=5,\n        ),\n        MessageTextInput(\n            name=\"replace_value\",\n            display_name=\"Value to Replace\",\n            info=\"The value to replace in the column.\",\n            dynamic=True,\n            show=False,\n        ),\n        MessageTextInput(\n            name=\"replacement_value\",\n            display_name=\"Replacement Value\",\n            info=\"The value to replace with.\",\n            dynamic=True,\n            show=False,\n        ),\n    ]\n\n    outputs = [\n        Output(\n            display_name=\"DataFrame\",\n            name=\"output\",\n            method=\"perform_operation\",\n            info=\"The resulting DataFrame after the operation.\",\n        )\n    ]\n\n    def update_build_config(self, build_config, field_value, field_name=None):\n        dynamic_fields = [\n            \"column_name\",\n            \"filter_value\",\n            \"filter_operator\",\n            \"ascending\",\n            \"new_column_name\",\n            \"new_column_value\",\n            \"columns_to_select\",\n            \"num_rows\",\n            \"replace_value\",\n            \"replacement_value\",\n        ]\n        for field in dynamic_fields:\n            build_config[field][\"show\"] = False\n\n        if field_name == \"operation\":\n            # Handle SortableListInput format\n            if isinstance(field_value, list):\n                operation_name = field_value[0].get(\"name\", \"\") if field_value else \"\"\n            else:\n                operation_name = field_value or \"\"\n\n            # If no operation selected, all dynamic fields stay hidden (already set to False above)\n            if not operation_name:\n                return build_config\n\n            if operation_name == \"Filter\":\n                build_config[\"column_name\"][\"show\"] = True\n                build_config[\"filter_value\"][\"show\"] = True\n                build_config[\"filter_operator\"][\"show\"] = True\n            elif operation_name == \"Sort\":\n                build_config[\"column_name\"][\"show\"] = True\n                build_config[\"ascending\"][\"show\"] = True\n            elif operation_name == \"Drop Column\":\n                build_config[\"column_name\"][\"show\"] = True\n            elif operation_name == \"Rename Column\":\n                build_config[\"column_name\"][\"show\"] = True\n                build_config[\"new_column_name\"][\"show\"] = True\n            elif operation_name == \"Add Column\":\n                build_config[\"new_column_name\"][\"show\"] = True\n                build_config[\"new_column_value\"][\"show\"] = True\n            elif operation_name == \"Select Columns\":\n                build_config[\"columns_to_select\"][\"show\"] = True\n            elif operation_name in {\"Head\", \"Tail\"}:\n                build_config[\"num_rows\"][\"show\"] = True\n            elif operation_name == \"Replace Value\":\n                build_config[\"column_name\"][\"show\"] = True\n                build_config[\"replace_value\"][\"show\"] = True\n                build_config[\"replacement_value\"][\"show\"] = True\n            elif operation_name == \"Drop Duplicates\":\n                build_config[\"column_name\"][\"show\"] = True\n\n        return build_config\n\n    def perform_operation(self) -> DataFrame:\n        df_copy = self.df.copy()\n\n        # Handle SortableListInput format for operation\n        operation_input = getattr(self, \"operation\", [])\n        if isinstance(operation_input, list) and len(operation_input) > 0:\n            op = operation_input[0].get(\"name\", \"\")\n        else:\n            op = \"\"\n\n        # If no operation selected, return original DataFrame\n        if not op:\n            return df_copy\n\n        if op == \"Filter\":\n            return self.filter_rows_by_value(df_copy)\n        if op == \"Sort\":\n            return self.sort_by_column(df_copy)\n        if op == \"Drop Column\":\n            return self.drop_column(df_copy)\n        if op == \"Rename Column\":\n            return self.rename_column(df_copy)\n        if op == \"Add Column\":\n            return self.add_column(df_copy)\n        if op == \"Select Columns\":\n            return self.select_columns(df_copy)\n        if op == \"Head\":\n            return self.head(df_copy)\n        if op == \"Tail\":\n            return self.tail(df_copy)\n        if op == \"Replace Value\":\n            return self.replace_values(df_copy)\n        if op == \"Drop Duplicates\":\n            return self.drop_duplicates(df_copy)\n        msg = f\"Unsupported operation: {op}\"\n        logger.error(msg)\n        raise ValueError(msg)\n\n    def filter_rows_by_value(self, df: DataFrame) -> DataFrame:\n        column = df[self.column_name]\n        filter_value = self.filter_value\n\n        # Handle regular DropdownInput format (just a string value)\n        operator = getattr(self, \"filter_operator\", \"equals\")  # Default to equals for backward compatibility\n\n        if operator == \"equals\":\n            mask = column == filter_value\n        elif operator == \"not equals\":\n            mask = column != filter_value\n        elif operator == \"contains\":\n            mask = column.astype(str).str.contains(str(filter_value), na=False)\n        elif operator == \"starts with\":\n            mask = column.astype(str).str.startswith(str(filter_value), na=False)\n        elif operator == \"ends with\":\n            mask = column.astype(str).str.endswith(str(filter_value), na=False)\n        elif operator == \"greater than\":\n            try:\n                # Try to convert filter_value to numeric for comparison\n                numeric_value = pd.to_numeric(filter_value)\n                mask = column > numeric_value\n            except (ValueError, TypeError):\n                # If conversion fails, compare as strings\n                mask = column.astype(str) > str(filter_value)\n        elif operator == \"less than\":\n            try:\n                # Try to convert filter_value to numeric for comparison\n                numeric_value = pd.to_numeric(filter_value)\n                mask = column < numeric_value\n            except (ValueError, TypeError):\n                # If conversion fails, compare as strings\n                mask = column.astype(str) < str(filter_value)\n        else:\n            mask = column == filter_value  # Fallback to equals\n\n        return DataFrame(df[mask])\n\n    def sort_by_column(self, df: DataFrame) -> DataFrame:\n        return DataFrame(df.sort_values(by=self.column_name, ascending=self.ascending))\n\n    def drop_column(self, df: DataFrame) -> DataFrame:\n        return DataFrame(df.drop(columns=[self.column_name]))\n\n    def rename_column(self, df: DataFrame) -> DataFrame:\n        return DataFrame(df.rename(columns={self.column_name: self.new_column_name}))\n\n    def add_column(self, df: DataFrame) -> DataFrame:\n        df[self.new_column_name] = [self.new_column_value] * len(df)\n        return DataFrame(df)\n\n    def select_columns(self, df: DataFrame) -> DataFrame:\n        columns = [col.strip() for col in self.columns_to_select]\n        return DataFrame(df[columns])\n\n    def head(self, df: DataFrame) -> DataFrame:\n        return DataFrame(df.head(self.num_rows))\n\n    def tail(self, df: DataFrame) -> DataFrame:\n        return DataFrame(df.tail(self.num_rows))\n\n    def replace_values(self, df: DataFrame) -> DataFrame:\n        df[self.column_name] = df[self.column_name].replace(self.replace_value, self.replacement_value)\n        return DataFrame(df)\n\n    def drop_duplicates(self, df: DataFrame) -> DataFrame:\n        return DataFrame(df.drop_duplicates(subset=self.column_name))\n"
+              },
+              "column_name": {
+                "_input_type": "StrInput",
+                "advanced": false,
+                "display_name": "Column Name",
+                "dynamic": true,
+                "info": "The column name to use for the operation.",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "column_name",
+                "placeholder": "",
+                "required": false,
+                "show": false,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "columns_to_select": {
+                "_input_type": "StrInput",
+                "advanced": false,
+                "display_name": "Columns to Select",
+                "dynamic": true,
+                "info": "",
+                "list": true,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "columns_to_select",
+                "placeholder": "",
+                "required": false,
+                "show": false,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "df": {
+                "_input_type": "DataFrameInput",
+                "advanced": false,
+                "display_name": "DataFrame",
+                "dynamic": false,
+                "info": "The input DataFrame to operate on.",
+                "input_types": [
+                  "DataFrame"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "df",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "other",
+                "value": ""
+              },
+              "filter_operator": {
+                "_input_type": "DropdownInput",
+                "advanced": false,
+                "combobox": false,
+                "dialog_inputs": {},
+                "display_name": "Filter Operator",
+                "dynamic": true,
+                "info": "The operator to apply for filtering rows.",
+                "name": "filter_operator",
+                "options": [
+                  "equals",
+                  "not equals",
+                  "contains",
+                  "starts with",
+                  "ends with",
+                  "greater than",
+                  "less than"
+                ],
+                "options_metadata": [],
+                "placeholder": "",
+                "required": false,
+                "show": false,
+                "title_case": false,
+                "toggle": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "equals"
+              },
+              "filter_value": {
+                "_input_type": "MessageTextInput",
+                "advanced": false,
+                "display_name": "Filter Value",
+                "dynamic": true,
+                "info": "The value to filter rows by.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "filter_value",
+                "placeholder": "",
+                "required": false,
+                "show": false,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "new_column_name": {
+                "_input_type": "StrInput",
+                "advanced": false,
+                "display_name": "New Column Name",
+                "dynamic": true,
+                "info": "The new column name when renaming or adding a column.",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "new_column_name",
+                "placeholder": "",
+                "required": false,
+                "show": false,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "new_column_value": {
+                "_input_type": "MessageTextInput",
+                "advanced": false,
+                "display_name": "New Column Value",
+                "dynamic": true,
+                "info": "The value to populate the new column with.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "new_column_value",
+                "placeholder": "",
+                "required": false,
+                "show": false,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "num_rows": {
+                "_input_type": "IntInput",
+                "advanced": false,
+                "display_name": "Number of Rows",
+                "dynamic": true,
+                "info": "Number of rows to return (for head/tail).",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "num_rows",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "int",
+                "value": 30
+              },
+              "operation": {
+                "_input_type": "SortableListInput",
+                "advanced": false,
+                "display_name": "Operation",
+                "dynamic": false,
+                "info": "Select the DataFrame operation to perform.",
+                "limit": 1,
+                "name": "operation",
+                "options": [
+                  {
+                    "icon": "plus",
+                    "name": "Add Column"
+                  },
+                  {
+                    "icon": "minus",
+                    "name": "Drop Column"
+                  },
+                  {
+                    "icon": "filter",
+                    "name": "Filter"
+                  },
+                  {
+                    "icon": "arrow-up",
+                    "name": "Head"
+                  },
+                  {
+                    "icon": "pencil",
+                    "name": "Rename Column"
+                  },
+                  {
+                    "icon": "replace",
+                    "name": "Replace Value"
+                  },
+                  {
+                    "icon": "columns",
+                    "name": "Select Columns"
+                  },
+                  {
+                    "icon": "arrow-up-down",
+                    "name": "Sort"
+                  },
+                  {
+                    "icon": "arrow-down",
+                    "name": "Tail"
+                  },
+                  {
+                    "icon": "copy-x",
+                    "name": "Drop Duplicates"
+                  }
+                ],
+                "placeholder": "Select Operation",
+                "real_time_refresh": true,
+                "required": false,
+                "search_category": [],
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "sortableList",
+                "value": [
+                  {
+                    "chosen": false,
+                    "icon": "arrow-up",
+                    "name": "Head",
+                    "selected": false
+                  }
+                ]
+              },
+              "replace_value": {
+                "_input_type": "MessageTextInput",
+                "advanced": false,
+                "display_name": "Value to Replace",
+                "dynamic": true,
+                "info": "The value to replace in the column.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "replace_value",
+                "placeholder": "",
+                "required": false,
+                "show": false,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "replacement_value": {
+                "_input_type": "MessageTextInput",
+                "advanced": false,
+                "display_name": "Replacement Value",
+                "dynamic": true,
+                "info": "The value to replace with.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "replacement_value",
+                "placeholder": "",
+                "required": false,
+                "show": false,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "DataFrameOperations"
+        },
+        "dragging": false,
+        "id": "DataFrameOperations-SoBdj",
+        "measured": {
+          "height": 315,
+          "width": 320
+        },
+        "position": {
+          "x": 262.3308073358174,
+          "y": 237.4562619386665
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "SplitText-fn7BK",
+          "node": {
+            "base_classes": [
+              "DataFrame"
+            ],
+            "beta": false,
+            "category": "processing",
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Split text into chunks based on specified criteria.",
+            "display_name": "Split Text",
+            "documentation": "https://docs.langflow.org/components-processing#split-text",
+            "edited": false,
+            "field_order": [
+              "data_inputs",
+              "chunk_overlap",
+              "chunk_size",
+              "separator",
+              "text_key",
+              "keep_separator"
+            ],
+            "frozen": false,
+            "icon": "scissors-line-dashed",
+            "key": "SplitText",
+            "legacy": false,
+            "metadata": {},
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Chunks",
+                "group_outputs": false,
+                "method": "split_text",
+                "name": "dataframe",
+                "selected": "DataFrame",
+                "tool_mode": true,
+                "types": [
+                  "DataFrame"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "score": 0.5227071898383153,
+            "template": {
+              "_type": "Component",
+              "chunk_overlap": {
+                "_input_type": "IntInput",
+                "advanced": false,
+                "display_name": "Chunk Overlap",
+                "dynamic": false,
+                "info": "Number of characters to overlap between chunks.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "chunk_overlap",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "int",
+                "value": 200
+              },
+              "chunk_size": {
+                "_input_type": "IntInput",
+                "advanced": false,
+                "display_name": "Chunk Size",
+                "dynamic": false,
+                "info": "The maximum length of each chunk. Text is first split by separator, then chunks are merged up to this size. Individual splits larger than this won't be further divided.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "chunk_size",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "int",
+                "value": 1000
+              },
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "from langchain_text_splitters import CharacterTextSplitter\n\nfrom langflow.custom.custom_component.component import Component\nfrom langflow.io import DropdownInput, HandleInput, IntInput, MessageTextInput, Output\nfrom langflow.schema.data import Data\nfrom langflow.schema.dataframe import DataFrame\nfrom langflow.schema.message import Message\nfrom langflow.utils.util import unescape_string\n\n\nclass SplitTextComponent(Component):\n    display_name: str = \"Split Text\"\n    description: str = \"Split text into chunks based on specified criteria.\"\n    documentation: str = \"https://docs.langflow.org/components-processing#split-text\"\n    icon = \"scissors-line-dashed\"\n    name = \"SplitText\"\n\n    inputs = [\n        HandleInput(\n            name=\"data_inputs\",\n            display_name=\"Input\",\n            info=\"The data with texts to split in chunks.\",\n            input_types=[\"Data\", \"DataFrame\", \"Message\"],\n            required=True,\n        ),\n        IntInput(\n            name=\"chunk_overlap\",\n            display_name=\"Chunk Overlap\",\n            info=\"Number of characters to overlap between chunks.\",\n            value=200,\n        ),\n        IntInput(\n            name=\"chunk_size\",\n            display_name=\"Chunk Size\",\n            info=(\n                \"The maximum length of each chunk. Text is first split by separator, \"\n                \"then chunks are merged up to this size. \"\n                \"Individual splits larger than this won't be further divided.\"\n            ),\n            value=1000,\n        ),\n        MessageTextInput(\n            name=\"separator\",\n            display_name=\"Separator\",\n            info=(\n                \"The character to split on. Use \\\\n for newline. \"\n                \"Examples: \\\\n\\\\n for paragraphs, \\\\n for lines, . for sentences\"\n            ),\n            value=\"\\n\",\n        ),\n        MessageTextInput(\n            name=\"text_key\",\n            display_name=\"Text Key\",\n            info=\"The key to use for the text column.\",\n            value=\"text\",\n            advanced=True,\n        ),\n        DropdownInput(\n            name=\"keep_separator\",\n            display_name=\"Keep Separator\",\n            info=\"Whether to keep the separator in the output chunks and where to place it.\",\n            options=[\"False\", \"True\", \"Start\", \"End\"],\n            value=\"False\",\n            advanced=True,\n        ),\n    ]\n\n    outputs = [\n        Output(display_name=\"Chunks\", name=\"dataframe\", method=\"split_text\"),\n    ]\n\n    def _docs_to_data(self, docs) -> list[Data]:\n        return [Data(text=doc.page_content, data=doc.metadata) for doc in docs]\n\n    def _fix_separator(self, separator: str) -> str:\n        \"\"\"Fix common separator issues and convert to proper format.\"\"\"\n        if separator == \"/n\":\n            return \"\\n\"\n        if separator == \"/t\":\n            return \"\\t\"\n        return separator\n\n    def split_text_base(self):\n        separator = self._fix_separator(self.separator)\n        separator = unescape_string(separator)\n\n        if isinstance(self.data_inputs, DataFrame):\n            if not len(self.data_inputs):\n                msg = \"DataFrame is empty\"\n                raise TypeError(msg)\n\n            self.data_inputs.text_key = self.text_key\n            try:\n                documents = self.data_inputs.to_lc_documents()\n            except Exception as e:\n                msg = f\"Error converting DataFrame to documents: {e}\"\n                raise TypeError(msg) from e\n        elif isinstance(self.data_inputs, Message):\n            self.data_inputs = [self.data_inputs.to_data()]\n            return self.split_text_base()\n        else:\n            if not self.data_inputs:\n                msg = \"No data inputs provided\"\n                raise TypeError(msg)\n\n            documents = []\n            if isinstance(self.data_inputs, Data):\n                self.data_inputs.text_key = self.text_key\n                documents = [self.data_inputs.to_lc_document()]\n            else:\n                try:\n                    documents = [input_.to_lc_document() for input_ in self.data_inputs if isinstance(input_, Data)]\n                    if not documents:\n                        msg = f\"No valid Data inputs found in {type(self.data_inputs)}\"\n                        raise TypeError(msg)\n                except AttributeError as e:\n                    msg = f\"Invalid input type in collection: {e}\"\n                    raise TypeError(msg) from e\n        try:\n            # Convert string 'False'/'True' to boolean\n            keep_sep = self.keep_separator\n            if isinstance(keep_sep, str):\n                if keep_sep.lower() == \"false\":\n                    keep_sep = False\n                elif keep_sep.lower() == \"true\":\n                    keep_sep = True\n                # 'start' and 'end' are kept as strings\n\n            splitter = CharacterTextSplitter(\n                chunk_overlap=self.chunk_overlap,\n                chunk_size=self.chunk_size,\n                separator=separator,\n                keep_separator=keep_sep,\n            )\n            return splitter.split_documents(documents)\n        except Exception as e:\n            msg = f\"Error splitting text: {e}\"\n            raise TypeError(msg) from e\n\n    def split_text(self) -> DataFrame:\n        return DataFrame(self._docs_to_data(self.split_text_base()))\n"
+              },
+              "data_inputs": {
+                "_input_type": "HandleInput",
+                "advanced": false,
+                "display_name": "Input",
+                "dynamic": false,
+                "info": "The data with texts to split in chunks.",
+                "input_types": [
+                  "Data",
+                  "DataFrame",
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "data_inputs",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "trace_as_metadata": true,
+                "type": "other",
+                "value": ""
+              },
+              "keep_separator": {
+                "_input_type": "DropdownInput",
+                "advanced": true,
+                "combobox": false,
+                "dialog_inputs": {},
+                "display_name": "Keep Separator",
+                "dynamic": false,
+                "info": "Whether to keep the separator in the output chunks and where to place it.",
+                "name": "keep_separator",
+                "options": [
+                  "False",
+                  "True",
+                  "Start",
+                  "End"
+                ],
+                "options_metadata": [],
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "toggle": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "False"
+              },
+              "separator": {
+                "_input_type": "MessageTextInput",
+                "advanced": false,
+                "display_name": "Separator",
+                "dynamic": false,
+                "info": "The character to split on. Use \\n for newline. Examples: \\n\\n for paragraphs, \\n for lines, . for sentences",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "separator",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "\n"
+              },
+              "text_key": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Text Key",
+                "dynamic": false,
+                "info": "The key to use for the text column.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "text_key",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "text"
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "SplitText"
+        },
+        "dragging": false,
+        "id": "SplitText-fn7BK",
+        "measured": {
+          "height": 411,
+          "width": 320
+        },
+        "position": {
+          "x": -116.69251536467647,
+          "y": 173.68271353730506
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "DataFrameOperations-F7B3p",
+          "node": {
+            "base_classes": [
+              "DataFrame"
+            ],
+            "beta": false,
+            "category": "processing",
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Perform various operations on a DataFrame.",
+            "display_name": "DataFrame Operations",
+            "documentation": "https://docs.langflow.org/components-processing#dataframe-operations",
+            "edited": false,
+            "field_order": [
+              "df",
+              "operation",
+              "column_name",
+              "filter_value",
+              "filter_operator",
+              "ascending",
+              "new_column_name",
+              "new_column_value",
+              "columns_to_select",
+              "num_rows",
+              "replace_value",
+              "replacement_value"
+            ],
+            "frozen": false,
+            "icon": "table",
+            "key": "DataFrameOperations",
+            "last_updated": "2025-07-23T14:24:43.047Z",
+            "legacy": false,
+            "metadata": {},
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "DataFrame",
+                "group_outputs": false,
+                "method": "perform_operation",
+                "name": "output",
+                "options": null,
+                "required_inputs": null,
+                "selected": "DataFrame",
+                "tool_mode": true,
+                "types": [
+                  "DataFrame"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "score": 0.007568328950209746,
+            "template": {
+              "_type": "Component",
+              "ascending": {
+                "_input_type": "BoolInput",
+                "advanced": false,
+                "display_name": "Sort Ascending",
+                "dynamic": true,
+                "info": "Whether to sort in ascending order.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "ascending",
+                "placeholder": "",
+                "required": false,
+                "show": false,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": true
+              },
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "import pandas as pd\n\nfrom langflow.custom.custom_component.component import Component\nfrom langflow.inputs import SortableListInput\nfrom langflow.io import (\n    BoolInput,\n    DataFrameInput,\n    DropdownInput,\n    IntInput,\n    MessageTextInput,\n    Output,\n    StrInput,\n)\nfrom langflow.logging import logger\nfrom langflow.schema.dataframe import DataFrame\n\n\nclass DataFrameOperationsComponent(Component):\n    display_name = \"DataFrame Operations\"\n    description = \"Perform various operations on a DataFrame.\"\n    documentation: str = \"https://docs.langflow.org/components-processing#dataframe-operations\"\n    icon = \"table\"\n    name = \"DataFrameOperations\"\n\n    OPERATION_CHOICES = [\n        \"Add Column\",\n        \"Drop Column\",\n        \"Filter\",\n        \"Head\",\n        \"Rename Column\",\n        \"Replace Value\",\n        \"Select Columns\",\n        \"Sort\",\n        \"Tail\",\n        \"Drop Duplicates\",\n    ]\n\n    inputs = [\n        DataFrameInput(\n            name=\"df\",\n            display_name=\"DataFrame\",\n            info=\"The input DataFrame to operate on.\",\n            required=True,\n        ),\n        SortableListInput(\n            name=\"operation\",\n            display_name=\"Operation\",\n            placeholder=\"Select Operation\",\n            info=\"Select the DataFrame operation to perform.\",\n            options=[\n                {\"name\": \"Add Column\", \"icon\": \"plus\"},\n                {\"name\": \"Drop Column\", \"icon\": \"minus\"},\n                {\"name\": \"Filter\", \"icon\": \"filter\"},\n                {\"name\": \"Head\", \"icon\": \"arrow-up\"},\n                {\"name\": \"Rename Column\", \"icon\": \"pencil\"},\n                {\"name\": \"Replace Value\", \"icon\": \"replace\"},\n                {\"name\": \"Select Columns\", \"icon\": \"columns\"},\n                {\"name\": \"Sort\", \"icon\": \"arrow-up-down\"},\n                {\"name\": \"Tail\", \"icon\": \"arrow-down\"},\n                {\"name\": \"Drop Duplicates\", \"icon\": \"copy-x\"},\n            ],\n            real_time_refresh=True,\n            limit=1,\n        ),\n        StrInput(\n            name=\"column_name\",\n            display_name=\"Column Name\",\n            info=\"The column name to use for the operation.\",\n            dynamic=True,\n            show=False,\n        ),\n        MessageTextInput(\n            name=\"filter_value\",\n            display_name=\"Filter Value\",\n            info=\"The value to filter rows by.\",\n            dynamic=True,\n            show=False,\n        ),\n        DropdownInput(\n            name=\"filter_operator\",\n            display_name=\"Filter Operator\",\n            options=[\"equals\", \"not equals\", \"contains\", \"starts with\", \"ends with\", \"greater than\", \"less than\"],\n            value=\"equals\",\n            info=\"The operator to apply for filtering rows.\",\n            advanced=False,\n            dynamic=True,\n            show=False,\n        ),\n        BoolInput(\n            name=\"ascending\",\n            display_name=\"Sort Ascending\",\n            info=\"Whether to sort in ascending order.\",\n            dynamic=True,\n            show=False,\n            value=True,\n        ),\n        StrInput(\n            name=\"new_column_name\",\n            display_name=\"New Column Name\",\n            info=\"The new column name when renaming or adding a column.\",\n            dynamic=True,\n            show=False,\n        ),\n        MessageTextInput(\n            name=\"new_column_value\",\n            display_name=\"New Column Value\",\n            info=\"The value to populate the new column with.\",\n            dynamic=True,\n            show=False,\n        ),\n        StrInput(\n            name=\"columns_to_select\",\n            display_name=\"Columns to Select\",\n            dynamic=True,\n            is_list=True,\n            show=False,\n        ),\n        IntInput(\n            name=\"num_rows\",\n            display_name=\"Number of Rows\",\n            info=\"Number of rows to return (for head/tail).\",\n            dynamic=True,\n            show=False,\n            value=5,\n        ),\n        MessageTextInput(\n            name=\"replace_value\",\n            display_name=\"Value to Replace\",\n            info=\"The value to replace in the column.\",\n            dynamic=True,\n            show=False,\n        ),\n        MessageTextInput(\n            name=\"replacement_value\",\n            display_name=\"Replacement Value\",\n            info=\"The value to replace with.\",\n            dynamic=True,\n            show=False,\n        ),\n    ]\n\n    outputs = [\n        Output(\n            display_name=\"DataFrame\",\n            name=\"output\",\n            method=\"perform_operation\",\n            info=\"The resulting DataFrame after the operation.\",\n        )\n    ]\n\n    def update_build_config(self, build_config, field_value, field_name=None):\n        dynamic_fields = [\n            \"column_name\",\n            \"filter_value\",\n            \"filter_operator\",\n            \"ascending\",\n            \"new_column_name\",\n            \"new_column_value\",\n            \"columns_to_select\",\n            \"num_rows\",\n            \"replace_value\",\n            \"replacement_value\",\n        ]\n        for field in dynamic_fields:\n            build_config[field][\"show\"] = False\n\n        if field_name == \"operation\":\n            # Handle SortableListInput format\n            if isinstance(field_value, list):\n                operation_name = field_value[0].get(\"name\", \"\") if field_value else \"\"\n            else:\n                operation_name = field_value or \"\"\n\n            # If no operation selected, all dynamic fields stay hidden (already set to False above)\n            if not operation_name:\n                return build_config\n\n            if operation_name == \"Filter\":\n                build_config[\"column_name\"][\"show\"] = True\n                build_config[\"filter_value\"][\"show\"] = True\n                build_config[\"filter_operator\"][\"show\"] = True\n            elif operation_name == \"Sort\":\n                build_config[\"column_name\"][\"show\"] = True\n                build_config[\"ascending\"][\"show\"] = True\n            elif operation_name == \"Drop Column\":\n                build_config[\"column_name\"][\"show\"] = True\n            elif operation_name == \"Rename Column\":\n                build_config[\"column_name\"][\"show\"] = True\n                build_config[\"new_column_name\"][\"show\"] = True\n            elif operation_name == \"Add Column\":\n                build_config[\"new_column_name\"][\"show\"] = True\n                build_config[\"new_column_value\"][\"show\"] = True\n            elif operation_name == \"Select Columns\":\n                build_config[\"columns_to_select\"][\"show\"] = True\n            elif operation_name in {\"Head\", \"Tail\"}:\n                build_config[\"num_rows\"][\"show\"] = True\n            elif operation_name == \"Replace Value\":\n                build_config[\"column_name\"][\"show\"] = True\n                build_config[\"replace_value\"][\"show\"] = True\n                build_config[\"replacement_value\"][\"show\"] = True\n            elif operation_name == \"Drop Duplicates\":\n                build_config[\"column_name\"][\"show\"] = True\n\n        return build_config\n\n    def perform_operation(self) -> DataFrame:\n        df_copy = self.df.copy()\n\n        # Handle SortableListInput format for operation\n        operation_input = getattr(self, \"operation\", [])\n        if isinstance(operation_input, list) and len(operation_input) > 0:\n            op = operation_input[0].get(\"name\", \"\")\n        else:\n            op = \"\"\n\n        # If no operation selected, return original DataFrame\n        if not op:\n            return df_copy\n\n        if op == \"Filter\":\n            return self.filter_rows_by_value(df_copy)\n        if op == \"Sort\":\n            return self.sort_by_column(df_copy)\n        if op == \"Drop Column\":\n            return self.drop_column(df_copy)\n        if op == \"Rename Column\":\n            return self.rename_column(df_copy)\n        if op == \"Add Column\":\n            return self.add_column(df_copy)\n        if op == \"Select Columns\":\n            return self.select_columns(df_copy)\n        if op == \"Head\":\n            return self.head(df_copy)\n        if op == \"Tail\":\n            return self.tail(df_copy)\n        if op == \"Replace Value\":\n            return self.replace_values(df_copy)\n        if op == \"Drop Duplicates\":\n            return self.drop_duplicates(df_copy)\n        msg = f\"Unsupported operation: {op}\"\n        logger.error(msg)\n        raise ValueError(msg)\n\n    def filter_rows_by_value(self, df: DataFrame) -> DataFrame:\n        column = df[self.column_name]\n        filter_value = self.filter_value\n\n        # Handle regular DropdownInput format (just a string value)\n        operator = getattr(self, \"filter_operator\", \"equals\")  # Default to equals for backward compatibility\n\n        if operator == \"equals\":\n            mask = column == filter_value\n        elif operator == \"not equals\":\n            mask = column != filter_value\n        elif operator == \"contains\":\n            mask = column.astype(str).str.contains(str(filter_value), na=False)\n        elif operator == \"starts with\":\n            mask = column.astype(str).str.startswith(str(filter_value), na=False)\n        elif operator == \"ends with\":\n            mask = column.astype(str).str.endswith(str(filter_value), na=False)\n        elif operator == \"greater than\":\n            try:\n                # Try to convert filter_value to numeric for comparison\n                numeric_value = pd.to_numeric(filter_value)\n                mask = column > numeric_value\n            except (ValueError, TypeError):\n                # If conversion fails, compare as strings\n                mask = column.astype(str) > str(filter_value)\n        elif operator == \"less than\":\n            try:\n                # Try to convert filter_value to numeric for comparison\n                numeric_value = pd.to_numeric(filter_value)\n                mask = column < numeric_value\n            except (ValueError, TypeError):\n                # If conversion fails, compare as strings\n                mask = column.astype(str) < str(filter_value)\n        else:\n            mask = column == filter_value  # Fallback to equals\n\n        return DataFrame(df[mask])\n\n    def sort_by_column(self, df: DataFrame) -> DataFrame:\n        return DataFrame(df.sort_values(by=self.column_name, ascending=self.ascending))\n\n    def drop_column(self, df: DataFrame) -> DataFrame:\n        return DataFrame(df.drop(columns=[self.column_name]))\n\n    def rename_column(self, df: DataFrame) -> DataFrame:\n        return DataFrame(df.rename(columns={self.column_name: self.new_column_name}))\n\n    def add_column(self, df: DataFrame) -> DataFrame:\n        df[self.new_column_name] = [self.new_column_value] * len(df)\n        return DataFrame(df)\n\n    def select_columns(self, df: DataFrame) -> DataFrame:\n        columns = [col.strip() for col in self.columns_to_select]\n        return DataFrame(df[columns])\n\n    def head(self, df: DataFrame) -> DataFrame:\n        return DataFrame(df.head(self.num_rows))\n\n    def tail(self, df: DataFrame) -> DataFrame:\n        return DataFrame(df.tail(self.num_rows))\n\n    def replace_values(self, df: DataFrame) -> DataFrame:\n        df[self.column_name] = df[self.column_name].replace(self.replace_value, self.replacement_value)\n        return DataFrame(df)\n\n    def drop_duplicates(self, df: DataFrame) -> DataFrame:\n        return DataFrame(df.drop_duplicates(subset=self.column_name))\n"
+              },
+              "column_name": {
+                "_input_type": "StrInput",
+                "advanced": false,
+                "display_name": "Column Name",
+                "dynamic": true,
+                "info": "The column name to use for the operation.",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "column_name",
+                "placeholder": "",
+                "required": false,
+                "show": false,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "columns_to_select": {
+                "_input_type": "StrInput",
+                "advanced": false,
+                "display_name": "Columns to Select",
+                "dynamic": true,
+                "info": "",
+                "list": true,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "columns_to_select",
+                "placeholder": "",
+                "required": false,
+                "show": false,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "df": {
+                "_input_type": "DataFrameInput",
+                "advanced": false,
+                "display_name": "DataFrame",
+                "dynamic": false,
+                "info": "The input DataFrame to operate on.",
+                "input_types": [
+                  "DataFrame"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "df",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "other",
+                "value": ""
+              },
+              "filter_operator": {
+                "_input_type": "DropdownInput",
+                "advanced": false,
+                "combobox": false,
+                "dialog_inputs": {},
+                "display_name": "Filter Operator",
+                "dynamic": true,
+                "info": "The operator to apply for filtering rows.",
+                "name": "filter_operator",
+                "options": [
+                  "equals",
+                  "not equals",
+                  "contains",
+                  "starts with",
+                  "ends with",
+                  "greater than",
+                  "less than"
+                ],
+                "options_metadata": [],
+                "placeholder": "",
+                "required": false,
+                "show": false,
+                "title_case": false,
+                "toggle": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "equals"
+              },
+              "filter_value": {
+                "_input_type": "MessageTextInput",
+                "advanced": false,
+                "display_name": "Filter Value",
+                "dynamic": true,
+                "info": "The value to filter rows by.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "filter_value",
+                "placeholder": "",
+                "required": false,
+                "show": false,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "new_column_name": {
+                "_input_type": "StrInput",
+                "advanced": false,
+                "display_name": "New Column Name",
+                "dynamic": true,
+                "info": "The new column name when renaming or adding a column.",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "new_column_name",
+                "placeholder": "",
+                "required": false,
+                "show": false,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "new_column_value": {
+                "_input_type": "MessageTextInput",
+                "advanced": false,
+                "display_name": "New Column Value",
+                "dynamic": true,
+                "info": "The value to populate the new column with.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "new_column_value",
+                "placeholder": "",
+                "required": false,
+                "show": false,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "num_rows": {
+                "_input_type": "IntInput",
+                "advanced": false,
+                "display_name": "Number of Rows",
+                "dynamic": true,
+                "info": "Number of rows to return (for head/tail).",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "num_rows",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "int",
+                "value": 30
+              },
+              "operation": {
+                "_input_type": "SortableListInput",
+                "advanced": false,
+                "display_name": "Operation",
+                "dynamic": false,
+                "info": "Select the DataFrame operation to perform.",
+                "limit": 1,
+                "name": "operation",
+                "options": [
+                  {
+                    "icon": "plus",
+                    "name": "Add Column"
+                  },
+                  {
+                    "icon": "minus",
+                    "name": "Drop Column"
+                  },
+                  {
+                    "icon": "filter",
+                    "name": "Filter"
+                  },
+                  {
+                    "icon": "arrow-up",
+                    "name": "Head"
+                  },
+                  {
+                    "icon": "pencil",
+                    "name": "Rename Column"
+                  },
+                  {
+                    "icon": "replace",
+                    "name": "Replace Value"
+                  },
+                  {
+                    "icon": "columns",
+                    "name": "Select Columns"
+                  },
+                  {
+                    "icon": "arrow-up-down",
+                    "name": "Sort"
+                  },
+                  {
+                    "icon": "arrow-down",
+                    "name": "Tail"
+                  },
+                  {
+                    "icon": "copy-x",
+                    "name": "Drop Duplicates"
+                  }
+                ],
+                "placeholder": "Select Operation",
+                "real_time_refresh": true,
+                "required": false,
+                "search_category": [],
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "sortableList",
+                "value": [
+                  {
+                    "chosen": false,
+                    "icon": "arrow-down",
+                    "name": "Tail",
+                    "selected": false
+                  }
+                ]
+              },
+              "replace_value": {
+                "_input_type": "MessageTextInput",
+                "advanced": false,
+                "display_name": "Value to Replace",
+                "dynamic": true,
+                "info": "The value to replace in the column.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "replace_value",
+                "placeholder": "",
+                "required": false,
+                "show": false,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "replacement_value": {
+                "_input_type": "MessageTextInput",
+                "advanced": false,
+                "display_name": "Replacement Value",
+                "dynamic": true,
+                "info": "The value to replace with.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "replacement_value",
+                "placeholder": "",
+                "required": false,
+                "show": false,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "DataFrameOperations"
+        },
+        "dragging": false,
+        "id": "DataFrameOperations-F7B3p",
+        "measured": {
+          "height": 315,
+          "width": 320
+        },
+        "position": {
+          "x": 254.7801364305953,
+          "y": 741.1611612521557
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "ParserComponent-M3zMJ",
+          "node": {
+            "base_classes": [
+              "Message"
+            ],
+            "beta": false,
+            "category": "processing",
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Extracts text using a template.",
+            "display_name": "Parser",
+            "documentation": "https://docs.langflow.org/components-processing#parser",
+            "edited": false,
+            "field_order": [
+              "input_data",
+              "mode",
+              "pattern",
+              "sep"
+            ],
+            "frozen": false,
+            "icon": "braces",
+            "key": "ParserComponent",
+            "legacy": false,
+            "metadata": {},
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Parsed Text",
+                "group_outputs": false,
+                "method": "parse_combined_text",
+                "name": "parsed_text",
+                "selected": "Message",
+                "tool_mode": true,
+                "types": [
+                  "Message"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "score": 2.220446049250313e-16,
+            "template": {
+              "_type": "Component",
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "from langflow.custom.custom_component.component import Component\nfrom langflow.helpers.data import safe_convert\nfrom langflow.inputs.inputs import BoolInput, HandleInput, MessageTextInput, MultilineInput, TabInput\nfrom langflow.schema.data import Data\nfrom langflow.schema.dataframe import DataFrame\nfrom langflow.schema.message import Message\nfrom langflow.template.field.base import Output\n\n\nclass ParserComponent(Component):\n    display_name = \"Parser\"\n    description = \"Extracts text using a template.\"\n    documentation: str = \"https://docs.langflow.org/components-processing#parser\"\n    icon = \"braces\"\n\n    inputs = [\n        HandleInput(\n            name=\"input_data\",\n            display_name=\"Data or DataFrame\",\n            input_types=[\"DataFrame\", \"Data\"],\n            info=\"Accepts either a DataFrame or a Data object.\",\n            required=True,\n        ),\n        TabInput(\n            name=\"mode\",\n            display_name=\"Mode\",\n            options=[\"Parser\", \"Stringify\"],\n            value=\"Parser\",\n            info=\"Convert into raw string instead of using a template.\",\n            real_time_refresh=True,\n        ),\n        MultilineInput(\n            name=\"pattern\",\n            display_name=\"Template\",\n            info=(\n                \"Use variables within curly brackets to extract column values for DataFrames \"\n                \"or key values for Data.\"\n                \"For example: `Name: {Name}, Age: {Age}, Country: {Country}`\"\n            ),\n            value=\"Text: {text}\",  # Example default\n            dynamic=True,\n            show=True,\n            required=True,\n        ),\n        MessageTextInput(\n            name=\"sep\",\n            display_name=\"Separator\",\n            advanced=True,\n            value=\"\\n\",\n            info=\"String used to separate rows/items.\",\n        ),\n    ]\n\n    outputs = [\n        Output(\n            display_name=\"Parsed Text\",\n            name=\"parsed_text\",\n            info=\"Formatted text output.\",\n            method=\"parse_combined_text\",\n        ),\n    ]\n\n    def update_build_config(self, build_config, field_value, field_name=None):\n        \"\"\"Dynamically hide/show `template` and enforce requirement based on `stringify`.\"\"\"\n        if field_name == \"mode\":\n            build_config[\"pattern\"][\"show\"] = self.mode == \"Parser\"\n            build_config[\"pattern\"][\"required\"] = self.mode == \"Parser\"\n            if field_value:\n                clean_data = BoolInput(\n                    name=\"clean_data\",\n                    display_name=\"Clean Data\",\n                    info=(\n                        \"Enable to clean the data by removing empty rows and lines \"\n                        \"in each cell of the DataFrame/ Data object.\"\n                    ),\n                    value=True,\n                    advanced=True,\n                    required=False,\n                )\n                build_config[\"clean_data\"] = clean_data.to_dict()\n            else:\n                build_config.pop(\"clean_data\", None)\n\n        return build_config\n\n    def _clean_args(self):\n        \"\"\"Prepare arguments based on input type.\"\"\"\n        input_data = self.input_data\n\n        match input_data:\n            case list() if all(isinstance(item, Data) for item in input_data):\n                msg = \"List of Data objects is not supported.\"\n                raise ValueError(msg)\n            case DataFrame():\n                return input_data, None\n            case Data():\n                return None, input_data\n            case dict() if \"data\" in input_data:\n                try:\n                    if \"columns\" in input_data:  # Likely a DataFrame\n                        return DataFrame.from_dict(input_data), None\n                    # Likely a Data object\n                    return None, Data(**input_data)\n                except (TypeError, ValueError, KeyError) as e:\n                    msg = f\"Invalid structured input provided: {e!s}\"\n                    raise ValueError(msg) from e\n            case _:\n                msg = f\"Unsupported input type: {type(input_data)}. Expected DataFrame or Data.\"\n                raise ValueError(msg)\n\n    def parse_combined_text(self) -> Message:\n        \"\"\"Parse all rows/items into a single text or convert input to string if `stringify` is enabled.\"\"\"\n        # Early return for stringify option\n        if self.mode == \"Stringify\":\n            return self.convert_to_string()\n\n        df, data = self._clean_args()\n\n        lines = []\n        if df is not None:\n            for _, row in df.iterrows():\n                formatted_text = self.pattern.format(**row.to_dict())\n                lines.append(formatted_text)\n        elif data is not None:\n            formatted_text = self.pattern.format(**data.data)\n            lines.append(formatted_text)\n\n        combined_text = self.sep.join(lines)\n        self.status = combined_text\n        return Message(text=combined_text)\n\n    def convert_to_string(self) -> Message:\n        \"\"\"Convert input data to string with proper error handling.\"\"\"\n        result = \"\"\n        if isinstance(self.input_data, list):\n            result = \"\\n\".join([safe_convert(item, clean_data=self.clean_data or False) for item in self.input_data])\n        else:\n            result = safe_convert(self.input_data or False)\n        self.log(f\"Converted to string with length: {len(result)}\")\n\n        message = Message(text=result)\n        self.status = message\n        return message\n"
+              },
+              "input_data": {
+                "_input_type": "HandleInput",
+                "advanced": false,
+                "display_name": "Data or DataFrame",
+                "dynamic": false,
+                "info": "Accepts either a DataFrame or a Data object.",
+                "input_types": [
+                  "DataFrame",
+                  "Data"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "input_data",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "trace_as_metadata": true,
+                "type": "other",
+                "value": ""
+              },
+              "mode": {
+                "_input_type": "TabInput",
+                "advanced": false,
+                "display_name": "Mode",
+                "dynamic": false,
+                "info": "Convert into raw string instead of using a template.",
+                "name": "mode",
+                "options": [
+                  "Parser",
+                  "Stringify"
+                ],
+                "placeholder": "",
+                "real_time_refresh": true,
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "tab",
+                "value": "Parser"
+              },
+              "pattern": {
+                "_input_type": "MultilineInput",
+                "advanced": false,
+                "copy_field": false,
+                "display_name": "Template",
+                "dynamic": true,
+                "info": "Use variables within curly brackets to extract column values for DataFrames or key values for Data.For example: `Name: {Name}, Age: {Age}, Country: {Country}`",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "multiline": true,
+                "name": "pattern",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "Text: {text}"
+              },
+              "sep": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Separator",
+                "dynamic": false,
+                "info": "String used to separate rows/items.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "sep",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "\n"
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "ParserComponent"
+        },
+        "dragging": false,
+        "id": "ParserComponent-M3zMJ",
+        "measured": {
+          "height": 327,
+          "width": 320
+        },
+        "position": {
+          "x": 653.9388036979615,
+          "y": 270.531863711946
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "ParserComponent-xV33K",
+          "node": {
+            "base_classes": [
+              "Message"
+            ],
+            "beta": false,
+            "category": "processing",
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Extracts text using a template.",
+            "display_name": "Parser",
+            "documentation": "https://docs.langflow.org/components-processing#parser",
+            "edited": false,
+            "field_order": [
+              "input_data",
+              "mode",
+              "pattern",
+              "sep"
+            ],
+            "frozen": false,
+            "icon": "braces",
+            "key": "ParserComponent",
+            "legacy": false,
+            "metadata": {},
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Parsed Text",
+                "group_outputs": false,
+                "method": "parse_combined_text",
+                "name": "parsed_text",
+                "selected": "Message",
+                "tool_mode": true,
+                "types": [
+                  "Message"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "score": 2.220446049250313e-16,
+            "template": {
+              "_type": "Component",
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "from langflow.custom.custom_component.component import Component\nfrom langflow.helpers.data import safe_convert\nfrom langflow.inputs.inputs import BoolInput, HandleInput, MessageTextInput, MultilineInput, TabInput\nfrom langflow.schema.data import Data\nfrom langflow.schema.dataframe import DataFrame\nfrom langflow.schema.message import Message\nfrom langflow.template.field.base import Output\n\n\nclass ParserComponent(Component):\n    display_name = \"Parser\"\n    description = \"Extracts text using a template.\"\n    documentation: str = \"https://docs.langflow.org/components-processing#parser\"\n    icon = \"braces\"\n\n    inputs = [\n        HandleInput(\n            name=\"input_data\",\n            display_name=\"Data or DataFrame\",\n            input_types=[\"DataFrame\", \"Data\"],\n            info=\"Accepts either a DataFrame or a Data object.\",\n            required=True,\n        ),\n        TabInput(\n            name=\"mode\",\n            display_name=\"Mode\",\n            options=[\"Parser\", \"Stringify\"],\n            value=\"Parser\",\n            info=\"Convert into raw string instead of using a template.\",\n            real_time_refresh=True,\n        ),\n        MultilineInput(\n            name=\"pattern\",\n            display_name=\"Template\",\n            info=(\n                \"Use variables within curly brackets to extract column values for DataFrames \"\n                \"or key values for Data.\"\n                \"For example: `Name: {Name}, Age: {Age}, Country: {Country}`\"\n            ),\n            value=\"Text: {text}\",  # Example default\n            dynamic=True,\n            show=True,\n            required=True,\n        ),\n        MessageTextInput(\n            name=\"sep\",\n            display_name=\"Separator\",\n            advanced=True,\n            value=\"\\n\",\n            info=\"String used to separate rows/items.\",\n        ),\n    ]\n\n    outputs = [\n        Output(\n            display_name=\"Parsed Text\",\n            name=\"parsed_text\",\n            info=\"Formatted text output.\",\n            method=\"parse_combined_text\",\n        ),\n    ]\n\n    def update_build_config(self, build_config, field_value, field_name=None):\n        \"\"\"Dynamically hide/show `template` and enforce requirement based on `stringify`.\"\"\"\n        if field_name == \"mode\":\n            build_config[\"pattern\"][\"show\"] = self.mode == \"Parser\"\n            build_config[\"pattern\"][\"required\"] = self.mode == \"Parser\"\n            if field_value:\n                clean_data = BoolInput(\n                    name=\"clean_data\",\n                    display_name=\"Clean Data\",\n                    info=(\n                        \"Enable to clean the data by removing empty rows and lines \"\n                        \"in each cell of the DataFrame/ Data object.\"\n                    ),\n                    value=True,\n                    advanced=True,\n                    required=False,\n                )\n                build_config[\"clean_data\"] = clean_data.to_dict()\n            else:\n                build_config.pop(\"clean_data\", None)\n\n        return build_config\n\n    def _clean_args(self):\n        \"\"\"Prepare arguments based on input type.\"\"\"\n        input_data = self.input_data\n\n        match input_data:\n            case list() if all(isinstance(item, Data) for item in input_data):\n                msg = \"List of Data objects is not supported.\"\n                raise ValueError(msg)\n            case DataFrame():\n                return input_data, None\n            case Data():\n                return None, input_data\n            case dict() if \"data\" in input_data:\n                try:\n                    if \"columns\" in input_data:  # Likely a DataFrame\n                        return DataFrame.from_dict(input_data), None\n                    # Likely a Data object\n                    return None, Data(**input_data)\n                except (TypeError, ValueError, KeyError) as e:\n                    msg = f\"Invalid structured input provided: {e!s}\"\n                    raise ValueError(msg) from e\n            case _:\n                msg = f\"Unsupported input type: {type(input_data)}. Expected DataFrame or Data.\"\n                raise ValueError(msg)\n\n    def parse_combined_text(self) -> Message:\n        \"\"\"Parse all rows/items into a single text or convert input to string if `stringify` is enabled.\"\"\"\n        # Early return for stringify option\n        if self.mode == \"Stringify\":\n            return self.convert_to_string()\n\n        df, data = self._clean_args()\n\n        lines = []\n        if df is not None:\n            for _, row in df.iterrows():\n                formatted_text = self.pattern.format(**row.to_dict())\n                lines.append(formatted_text)\n        elif data is not None:\n            formatted_text = self.pattern.format(**data.data)\n            lines.append(formatted_text)\n\n        combined_text = self.sep.join(lines)\n        self.status = combined_text\n        return Message(text=combined_text)\n\n    def convert_to_string(self) -> Message:\n        \"\"\"Convert input data to string with proper error handling.\"\"\"\n        result = \"\"\n        if isinstance(self.input_data, list):\n            result = \"\\n\".join([safe_convert(item, clean_data=self.clean_data or False) for item in self.input_data])\n        else:\n            result = safe_convert(self.input_data or False)\n        self.log(f\"Converted to string with length: {len(result)}\")\n\n        message = Message(text=result)\n        self.status = message\n        return message\n"
+              },
+              "input_data": {
+                "_input_type": "HandleInput",
+                "advanced": false,
+                "display_name": "Data or DataFrame",
+                "dynamic": false,
+                "info": "Accepts either a DataFrame or a Data object.",
+                "input_types": [
+                  "DataFrame",
+                  "Data"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "input_data",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "trace_as_metadata": true,
+                "type": "other",
+                "value": ""
+              },
+              "mode": {
+                "_input_type": "TabInput",
+                "advanced": false,
+                "display_name": "Mode",
+                "dynamic": false,
+                "info": "Convert into raw string instead of using a template.",
+                "name": "mode",
+                "options": [
+                  "Parser",
+                  "Stringify"
+                ],
+                "placeholder": "",
+                "real_time_refresh": true,
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "tab",
+                "value": "Parser"
+              },
+              "pattern": {
+                "_input_type": "MultilineInput",
+                "advanced": false,
+                "copy_field": false,
+                "display_name": "Template",
+                "dynamic": true,
+                "info": "Use variables within curly brackets to extract column values for DataFrames or key values for Data.For example: `Name: {Name}, Age: {Age}, Country: {Country}`",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "multiline": true,
+                "name": "pattern",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "Text: {text}"
+              },
+              "sep": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Separator",
+                "dynamic": false,
+                "info": "String used to separate rows/items.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "sep",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "\n"
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "ParserComponent"
+        },
+        "dragging": false,
+        "id": "ParserComponent-xV33K",
+        "measured": {
+          "height": 327,
+          "width": 320
+        },
+        "position": {
+          "x": 659.1607412018592,
+          "y": 701.170109407813
         },
         "selected": false,
         "type": "genericNode"
       }
     ],
     "viewport": {
-      "x": -81.28113314650773,
-      "y": -116.60071248654742,
-      "zoom": 0.8786820106402464
+      "x": -108.56246136011396,
+      "y": -56.47046505207916,
+      "zoom": 0.6938849068897373
     }
   },
   "description": "Language Architect at Work!",
