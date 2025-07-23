@@ -1,1 +1,28 @@
-{"mcpServers": {"lf_mcp_server": {"command": "uvx", "args": ["mcp-proxy", "http://localhost:7860/api/v1/mcp/project/a759178a-5b74-4737-bee9-ce1e16142eb3/sse"]}, "mcp_laravel_tools": {"command": "uvx", "args": ["mcp-proxy", "http://saas-ia-filament-mcp-1:8090/mcp/sse"]}}}
+{
+  "mcpServers": {
+    "lf_mcp_server": {
+      "command": "uvx",
+      "args": [
+        "mcp-proxy",
+        "http://localhost:7860/api/v1/mcp/project/a759178a-5b74-4737-bee9-ce1e16142eb3/sse"
+      ]
+    },
+    "mcp_laravel_tools": {
+      "command": "uvx",
+      "args": [
+        "mcp-proxy",
+        "http://saas-ia-filament-mcp-1:8090/mcp/sse"
+      ]
+    },
+    "lf_starter_project_auth_aspas": {
+      "command": "uvx",
+      "args": [
+        "mcp-proxy",
+        "--headers",
+        "Authorization",
+        "'Bearer l4f5WCtFkzdw8ouiGYli8ZwhRrjGgCuRcxQdakhq689cbb5f'",
+        "http://mcp-integrated/mcp/sse"
+      ]
+    }
+  }
+}
